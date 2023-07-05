@@ -1,0 +1,59 @@
+[versions]
+coroutines = "1.7.2"
+detekt = "1.23.0"
+kotlin = "1.8.22"
+kotlininject = "0.6.1"
+ksp = "1.8.22-1.0.11"
+ktor = "2.3.2"
+ktorfit = "1.4.2"
+
+[plugins]
+detekt = { id = "io.gitlab.arturbosch.detekt", version.ref = "detekt" }
+
+dokka = { id = "org.jetbrains.dokka", version = "1.8.20" }
+
+kotlin-multiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
+kotlinx-kover = { id = "org.jetbrains.kotlinx.kover", version = "0.7.2" }
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
+ktorfit = { id = "de.jensklingenberg.ktorfit", version = "1.0.0"}
+
+serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version = "1.8.22"}
+
+[libraries]
+detekt-formatting = { module = "io.gitlab.arturbosch.detekt:detekt-formatting", version.ref = "detekt" }
+
+google_truth = "com.google.truth:truth:1.1.5"
+
+junit-jupiter = "org.junit.jupiter:junit-jupiter:5.9.3"
+
+kermit = "co.touchlab:kermit:2.0.0-RC4"
+
+kotlininject-ksp = { module = "me.tatarka.inject:kotlin-inject-compiler-ksp", version.ref = "kotlininject" }
+kotlininject-runtime = { module = "me.tatarka.inject:kotlin-inject-runtime", version.ref = "kotlininject" }
+
+
+kotlinx-atomicfu = "org.jetbrains.kotlinx:atomicfu:0.21.0"
+kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "coroutines" }
+kotlinx-coroutines-test = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-test", version.ref = "coroutines" }
+kotlinx-datetime = "org.jetbrains.kotlinx:kotlinx-datetime:0.4.0"
+kotlinx-serialization-json = "org.jetbrains.kotlinx:kotlinx-serialization-json:1.5.1"
+
+ktorfit = { module = "de.jensklingenberg.ktorfit:ktorfit-lib", version.ref = "ktorfit" }
+ktorfit-ksp = { module = "de.jensklingenberg.ktorfit:ktorfit-ksp", version.ref = "ktorfit" }
+
+ktor-auth = { module = "io.ktor:ktor-client-auth", version.ref = "ktor" }
+ktor-core = { module = "io.ktor:ktor-client-core", version.ref = "ktor" }
+ktor-js = { module = "io.ktor:ktor-client-js", version.ref = "ktor" }
+ktor-logging = { module = "io.ktor:ktor-client-logging", version.ref = "ktor" }
+ktor-okhttp = { module = "io.ktor:ktor-client-okhttp", version.ref = "ktor" }
+ktor-content-negotiation = { module = "io.ktor:ktor-client-content-negotiation", version.ref = "ktor" }
+ktor-serialization-kotlinx-json = { module = "io.ktor:ktor-serialization-kotlinx-json", version.ref = "ktor" }
+
+logback-classic = "ch.qos.logback:logback-classic:1.4.8"
+
+mockito-kotlin = "org.mockito.kotlin:mockito-kotlin:5.0.0"
+mockito-inline = "org.mockito:mockito-inline:5.2.0"
+
+store = "org.mobilenativefoundation.store:store5:5.0.0-beta01"
+
+turbine = "app.cash.turbine:turbine:1.0.0"
